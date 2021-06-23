@@ -91,7 +91,7 @@ export default Ember.Component.extend({
 
   isNthPost(n) {
     if (n && (n > 0)) {
-      if(n === 1)
+      if(n == 1)
         return true;
       else
         return this.get("postNumber") % n === 0;
